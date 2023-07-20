@@ -9,6 +9,10 @@ const expressServer = app.listen(3001);
 //returns http object so we pass that http to our socket io server
 const io = socketio(expressServer);
 
+
+//required game schema
+const Game = require('.models/games');
+
 //connect to mongolDb database locally
 mongoose.connect('mongodb://localhost:27017/coderace', 
                 {useNewUrlParser: true, useUnifiedTopology : true});

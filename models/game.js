@@ -19,3 +19,27 @@ const PlayerSchema = new mongoose.Schema({
     nickName: {type: String}
 
 });
+
+//game availability to join once started?
+
+const GameSchema = new mongoose.Schema({
+    words: [{type: string}],
+
+    //game running?
+    isOpen : {type: Boolean,default : true},
+
+    //game over?
+    isOver : {type: Boolean, default : true},
+
+    //contains all players in the game
+    players : [PlayerSchema],
+
+    //start time
+    startTime: {type: Number}
+
+
+});
+
+//export and give game scheme
+
+module.exports = mongoose.model('Game', GameSchema);
