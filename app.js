@@ -10,6 +10,6 @@ const expressServer = app.listen(3001);
 const io = socketio(expressServer);
 
 //connect to mongolDb database locally
-mongoose.connect('mongodb://localhost:27017/coderacer', 
-                {useNewUrlParser: true, useUnifiedTopology : true},
-                ()=> { console.log('Successfully connected to database')});
+mongoose.connect('mongodb://localhost:27017/coderace', 
+                {useNewUrlParser: true, useUnifiedTopology : true});
+
