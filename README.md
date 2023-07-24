@@ -14,4 +14,3 @@ express
 mongoose
 socket.io
 
--create own coding wordbank for what i want the user to type;
