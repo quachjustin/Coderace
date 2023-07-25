@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+//usually u pullout browser-router and browser router as router but we use router because we will use history object outside from where we usually use it
+import { Router,Route,Switch } from 'react-router-dom';
+import history from './history';
+import GameMenu from './components/GameMenu';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history = { history }>
+      <Switch>
+        <Route exact path = "/" component = {GameMenu}/>
+      </Switch>
+    </Router>
   );
 }
 
 export default App;
+
+//installing react-router-dom -> error!! cannot open server
