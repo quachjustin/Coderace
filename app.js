@@ -17,4 +17,3 @@ const Game = require('.models/games');
 mongoose.connect('mongodb://localhost:27017/coderace', 
                 {useNewUrlParser: true, useUnifiedTopology : true});
 
-
