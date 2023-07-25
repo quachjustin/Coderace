@@ -1,6 +1,6 @@
 # Coderacer
 
-Test your typing skills
+Test your coding speed with Coderacer
 
 
 reactJS
