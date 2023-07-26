@@ -2,11 +2,11 @@
 //use hooks;
 
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const GameMenu = props => {
     //access to history object
-    let history = useHistory();
+    let history = useNavigate();
     return(
         <div className = "text-center">
             <h1>Welcome to Coderacer</h1>
