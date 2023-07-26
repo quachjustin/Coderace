@@ -6,3 +6,5 @@ import { createBrowserHistory } from 'history';
 
 //export to use
 export default createBrowserHistory();
+
+

@@ -3,8 +3,6 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import createBrowserHistory from 'history';
-
 
 const GameMenu = props => {
     //access to history object
