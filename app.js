@@ -4,7 +4,7 @@ const socketio = require('socket.io');
 const mongoose = require('mongoose');
 
 //3000 vs 3001; create react app by default listens to 3000; so pick unused port
-const expressServer = app.listen(3001);
+const expressServer = app.listen(3002);
 
 //returns http object so we pass that http to our socket io server
 const io = socketio(expressServer);

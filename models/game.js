@@ -12,8 +12,9 @@ const PlayerSchema = new mongoose.Schema({
     //able to start game; partyleader true or false;
     isPartyLeader: {type : Boolean, default : false},
 
-    //words for minute; default at -1 so it doesnt start counting
-    WPM: {type: Number, default: -1},
+    //may need to change: default: 0 OR default: 1
+    //words for minute; default at 0 OR -1 so it doesnt start counting
+    WPM: {type: Number, default: 0},
 
     //usernames type string
     nickName: {type: String}
@@ -31,15 +32,14 @@ const GameSchema = new mongoose.Schema({
     //game over?
     isOver : {type: Boolean, default : true},
 
-    //contains all players in the game
+    //contains all players in the game; 
     players : [PlayerSchema],
 
-    //start time
+    //start time;
     startTime: {type: Number}
 
 
 });
 
 //export and give game scheme
-
 module.exports = mongoose.model('Game', GameSchema);
