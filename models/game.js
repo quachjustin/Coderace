@@ -14,7 +14,7 @@ const PlayerSchema = new mongoose.Schema({
 
     //may need to change: default: 0 OR default: 1
     //words for minute; default at 0 OR -1 so it doesnt start counting
-    WPM: {type: Number, default: 0},
+    WPM: {type: Number, default: -1},
 
     //usernames type string
     nickName: {type: String}
@@ -30,7 +30,7 @@ const GameSchema = new mongoose.Schema({
     isOpen : {type: Boolean,default : true},
 
     //game over?
-    isOver : {type: Boolean, default : true},
+    isOver : {type: Boolean, default : false},
 
     //contains all players in the game; 
     players : [PlayerSchema],

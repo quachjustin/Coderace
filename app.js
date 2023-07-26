@@ -11,10 +11,10 @@ const io = socketio(expressServer);
 
 
 //required game schema
-const Game = require('.models/games');
+const Game = require('./Models/Games');
 
 //connect to mongolDb database locally
-mongoose.connect('mongodb://localhost:27017/coderace', 
+mongoose.connect('mongodb://localhost:27017/Coderace', 
                 {useNewUrlParser: true, useUnifiedTopology : true});
 
 io.on('connect', (socket)=>{

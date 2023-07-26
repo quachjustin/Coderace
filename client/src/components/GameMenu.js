@@ -1,5 +1,6 @@
 //functional components
 //use hooks;
+//useHistory is replaced with useNavigate
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -17,6 +18,5 @@ const GameMenu = props => {
         </div>
     )
 }
-
 export default GameMenu;
 
