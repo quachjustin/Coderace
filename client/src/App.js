@@ -1,11 +1,10 @@
 import React,{ useEffect } from 'react';
 //usually u pullout browser-router and browser router as router but we use router because we will use history object outside from where we usually use it
 import { Router,Route, Routes } from 'react-router-dom';
+//change history
 import history from './history';
 import GameMenu from './components/GameMenu';
 import socket from './socketConfig';
-
-
 
 function App() {
   useEffect(() => {
@@ -13,6 +12,8 @@ function App() {
       console.log(msg);
     });
   },[]);
+
+  //change history
   return (
     <Router history = { history }>
       <Routes>
