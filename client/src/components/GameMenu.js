@@ -3,10 +3,15 @@
 //useHistory is replaced with useNavigate
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+
+//might need to change
+import { useNavigate } from 'react-router-dom'; 
+
+
 
 const GameMenu = props => {
     //access to history object
+
     let navigate = useNavigate();
     return(
         <div className = "text-center">
