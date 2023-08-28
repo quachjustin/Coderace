@@ -9,8 +9,4 @@ socket.io
 express
 mongoDB
 
-packages installed;
-express
-mongoose
-socket.io
 
